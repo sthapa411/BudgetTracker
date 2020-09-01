@@ -2,11 +2,9 @@ window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndex
 
 if (!window.indexedDB) {
     console.log("IndexedDB is not supported in your browser!")
-} else {
-
-    console.log("IndexedDB is supported by your browser.")
+} else {console.log("IndexedDB is supported by your browser.")
     
-    // create new request for 'budget' database
+     //create new request for 'budget' database
     let db
     const request = indexedDB.open("budget",1);
 
